@@ -43,3 +43,40 @@ plt.title('Salary vs Experience (Test set)')  # Set the title of the plot
 plt.xlabel('Years of Experience')  # Label for the x-axis
 plt.ylabel('Salary')  # Label for the y-axis
 plt.show()  # Display the plot
+
+
+
+
+
+
+
+"""
+Linear Regression Equation Documentation:
+
+The Linear Regression equation used in this model is:
+
+    y = β₀ + β₁ * x
+
+Where:
+- y (Salary) is the dependent variable (the value we want to predict, in this case, salary).
+- x (Years of Experience) is the independent variable (the feature used to predict salary).
+- β₀ (Intercept) is the point where the regression line crosses the y-axis, which represents the predicted salary when the years of experience is 0.
+- β₁ (Slope) is the coefficient that represents how much the salary increases with each additional year of experience.
+
+### Example:
+For a given model, the equation might look like this:
+
+    Salary = 30000 + 5000 * (Years of Experience)
+
+Where:
+- β₀ = 30000: The starting salary when someone has 0 years of experience.
+- β₁ = 5000: The salary increase per additional year of experience.
+
+For an individual with 3 years of experience, the predicted salary would be:
+
+    Salary = 30000 + 5000 * 3 = 45000
+
+Thus, the predicted salary for someone with 3 years of experience would be 45,000 units.
+
+The model finds the best-fitting line that minimizes the error between the predicted and actual salary values based on the data. This is achieved by determining the values of β₀ and β₁ during the training process using the training data.
+"""
