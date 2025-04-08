@@ -16,7 +16,7 @@ y = dataset.iloc[:, -1].values
 from sklearn.impute import SimpleImputer
 
 imputer = SimpleImputer(missing_values=np.nan, strategy='mean')  
-# Creates an object to replace missing values (NaN) with the mean of the corresponding column.
+# Creates an object to replace missing values (NaN) with the mean of the corresponding column. 
 
 imputer.fit(X[:, 1:3])  
 # Computes the mean for the specified columns (in this case, columns 1 and 2).
